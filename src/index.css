@@ -148,3 +148,10 @@ footer ul li:hover {
   list-style-type: none;
   color: rgb(255, 99, 3);
 }
+
+.pastOrder {
+  border: 5px solid gray;
+  box-shadow: 2px 2px 4px gray;
+  padding: 1em;
+  background-color: #f8f4d8;
+}

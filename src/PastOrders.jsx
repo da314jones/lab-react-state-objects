@@ -1,6 +1,6 @@
 export default function PastOrders({ pastOrders }) {
   return (
-    <div>
+    <div className="pastOrder">
       <h3>Past orders</h3>
       <div>
         {pastOrders.map((order, index) => {
@@ -9,7 +9,7 @@ export default function PastOrders({ pastOrders }) {
               <li key={index}>
                 {Array.isArray(order.items) &&
                   order.items.map((item, index) => (
-                    <li key={item.id + index}>{item.name}</li>
+                    <li key={item.id + index}>{item.name} (qt: {item.quantity})</li>
                   ))}
               </li>
             </ul>
