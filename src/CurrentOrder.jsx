@@ -11,7 +11,7 @@ export default function CurrentOrder({
         {order.map((item, index) => (
           <li key={index}>
             {item.name} - {item.price} (x{item.quantity})
-            <button onClick={() => removeOneOrder(index)} className="removeOneOrder"><img src="public/download.jpeg" width="20px"/></button>
+            <button onClick={() => removeOneOrder(index)} className="removeOneOrder"><img src="public/1645995_delete_minus_remove_icon.svg" width="15px"/></button>
             <button onClick={() => removeAll(index)} className="removeAll">❌</button>
           </li>
         ))}
