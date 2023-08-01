@@ -1,5 +1,5 @@
-export default function Menu({items, onOrder})  {
-    return (
+export default function Menu({ items, onOrder }) {
+  return (
     <table>
       <tr>
         <th>Image</th>
@@ -20,5 +20,5 @@ export default function Menu({items, onOrder})  {
         ))}
       </tbody>
     </table>
-    )
+  );
 }

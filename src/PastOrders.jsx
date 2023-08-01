@@ -9,7 +9,9 @@ export default function PastOrders({ pastOrders }) {
               <li key={index}>
                 {Array.isArray(order.items) &&
                   order.items.map((item, index) => (
-                    <li key={item.id + index}>{item.name} (qt: {item.quantity})</li>
+                    <li key={item.id + index}>
+                      {item.name} (qt: {item.quantity})
+                    </li>
                   ))}
               </li>
             </ul>

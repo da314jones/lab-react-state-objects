@@ -155,3 +155,11 @@ footer ul li:hover {
   padding: 1em;
   background-color: #f8f4d8;
 }
+
+.removeAll {
+  all: unset
+}
+
+.removeOneOrder {
+  all: unset;
+}
