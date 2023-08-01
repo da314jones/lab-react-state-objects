@@ -65,7 +65,7 @@ function App() {
           <div>
             <CurrentOrder order={order} removeOrder={removeOrder} total={total} />
           <div>
-              <button>Tidy order</button>
+              {/* <button>Tidy order</button> */}
               <button onClick={closeOrder}>Close order</button>
             </div>
           </div>
