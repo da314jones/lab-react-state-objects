@@ -48,21 +48,6 @@ function App() {
     0
   );
 
-  /*irregular functionality 'causes tidy order to count all the multiple
-  order items it first then it disregards any further input'
-  const tidyOrder = () => {
-    const tidy = order.reduce((acc, item) => {
-      const found = acc.find(orderItem => orderItem.id === item.id )
-      if (found) {
-        found.quantity += 1;
-      } else {
-        acc.push({ ...item, quantity: 1});
-      }
-      return acc;
-    }, []);
-    setOrder(tidy);
-  }
-*/
 
   return (
     <div className="App">
@@ -83,7 +68,6 @@ function App() {
               total={total}
             />
             <div>
-              {/* <button>Tidy order</button> */}
               <button onClick={closeOrder}>Close order</button>
             </div>
           </div>
